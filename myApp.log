@@ -1,0 +1,437 @@
+2020-12-09 01:41:29.453  INFO 2400 --- [main] c.s.itacademy.ToDoListApplication        : Starting ToDoListApplication on LAPTOP-M48TDL80 with PID 2400 (C:\1\spring-security-s18-team-3-1\target\classes started by 38093 in C:\1\spring-security-s18-team-3-1)
+2020-12-09 01:41:29.457  INFO 2400 --- [main] c.s.itacademy.ToDoListApplication        : No active profile set, falling back to default profiles: default
+2020-12-09 01:41:30.170  INFO 2400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-09 01:41:30.254  INFO 2400 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 77ms. Found 5 JPA repository interfaces.
+2020-12-09 01:41:30.484  INFO 2400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@148c7c4b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 01:41:30.490  INFO 2400 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 01:41:30.694  INFO 2400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-12-09 01:41:30.701  INFO 2400 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-09 01:41:30.702  INFO 2400 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-09 01:41:30.834  INFO 2400 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-09 01:41:30.834  INFO 2400 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1326 ms
+2020-12-09 01:41:30.962  INFO 2400 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 01:41:31.006  INFO 2400 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-09 01:41:31.043  INFO 2400 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-12-09 01:41:31.109  WARN 2400 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 01:41:31.132  INFO 2400 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-09 01:41:31.209  INFO 2400 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-09 01:41:31.226  INFO 2400 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54336976, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d0cac30, org.springframework.security.web.header.HeaderWriterFilter@3fc7c734, org.springframework.security.web.authentication.logout.LogoutFilter@4640195a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d611f1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dfe23e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@314a31b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f25f48a, org.springframework.security.web.session.SessionManagementFilter@460b50df, org.springframework.security.web.access.ExceptionTranslationFilter@71370fec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61874b9d]
+2020-12-09 01:41:31.371  INFO 2400 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-09 01:41:31.382  INFO 2400 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-12-09 01:41:31.771  INFO 2400 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-12-09 01:41:31.773  INFO 2400 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-09 01:41:32.258  INFO 2400 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-09 01:41:32.272  INFO 2400 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 01:41:32.511  INFO 2400 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-09 01:41:32.518  INFO 2400 --- [main] c.s.itacademy.ToDoListApplication        : Started ToDoListApplication in 3.383 seconds (JVM running for 4.08)
+2020-12-09 01:41:40.290  INFO 2400 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 01:41:40.291  INFO 2400 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-09 01:41:40.298  INFO 2400 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2020-12-09 01:41:40.460  WARN 2400 --- [http-nio-9091-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [134] milliseconds.
+2020-12-09 01:41:49.753  INFO 2400 --- [http-nio-9091-exec-4] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 01:41:54.853  INFO 2400 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 01:41:57.157  INFO 2400 --- [http-nio-9091-exec-8] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 01:41:58.228 ERROR 2400 --- [http-nio-9091-exec-9] c.s.i.exception.GlobalExceptionHandler   : Exception raised = Access is denied :: URL = http://localhost:9091/todos/all/users/10
+2020-12-09 01:42:01.245  INFO 2400 --- [http-nio-9091-exec-1] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:05:37.352  INFO 13004 --- [main] c.s.itacademy.service.UserServiceTest    : Starting UserServiceTest on LAPTOP-M48TDL80 with PID 13004 (started by 38093 in C:\1\spring-security-s18-team-3-1)
+2020-12-09 13:05:37.358  INFO 13004 --- [main] c.s.itacademy.service.UserServiceTest    : No active profile set, falling back to default profiles: default
+2020-12-09 13:05:38.339  INFO 13004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-09 13:05:38.467  INFO 13004 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 116ms. Found 5 JPA repository interfaces.
+2020-12-09 13:05:39.708  INFO 13004 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@51d0ec6f' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:05:39.736  INFO 13004 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:05:39.989  INFO 13004 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 13:05:40.084  INFO 13004 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-09 13:05:40.185  INFO 13004 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-12-09 13:05:40.250  INFO 13004 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-09 13:05:40.382  WARN 13004 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 13:05:40.658  INFO 13004 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-09 13:05:40.764  INFO 13004 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@c5e69a5, org.springframework.security.web.context.SecurityContextPersistenceFilter@664db2ca, org.springframework.security.web.header.HeaderWriterFilter@727986ad, org.springframework.security.web.authentication.logout.LogoutFilter@615b5480, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@446b64b3, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@1aedf08d, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@3f866f50, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@64a1116a, org.springframework.security.web.session.SessionManagementFilter@56b1e527, org.springframework.security.web.access.ExceptionTranslationFilter@eaf8427, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@76d0ecd7]
+2020-12-09 13:05:40.972  INFO 13004 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-09 13:05:41.007  INFO 13004 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-12-09 13:05:42.085  INFO 13004 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-09 13:05:42.303  INFO 13004 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-09 13:05:42.311  INFO 13004 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 13:05:42.677  INFO 13004 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-09 13:05:42.686  INFO 13004 --- [main] c.s.itacademy.service.UserServiceTest    : Started UserServiceTest in 5.801 seconds (JVM running for 7.174)
+2020-12-09 13:05:42.888  INFO 13004 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 13:05:42.891  INFO 13004 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-09 13:05:42.892  INFO 13004 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-09 13:05:42.900  INFO 13004 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-09 13:06:14.257  INFO 6832 --- [main] c.s.itacademy.service.UserServiceTest    : Starting UserServiceTest on LAPTOP-M48TDL80 with PID 6832 (started by 38093 in C:\1\spring-security-s18-team-3-1)
+2020-12-09 13:06:14.258  INFO 6832 --- [main] c.s.itacademy.service.UserServiceTest    : No active profile set, falling back to default profiles: default
+2020-12-09 13:06:15.079  INFO 6832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-09 13:06:15.194  INFO 6832 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 107ms. Found 5 JPA repository interfaces.
+2020-12-09 13:06:16.235  INFO 6832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@4e0cc334' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:06:16.263  INFO 6832 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:06:16.486  INFO 6832 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 13:06:16.595  INFO 6832 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-09 13:06:16.681  INFO 6832 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-12-09 13:06:16.750  INFO 6832 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-09 13:06:16.897  WARN 6832 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 13:06:17.131  INFO 6832 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-09 13:06:17.263  INFO 6832 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@64a1116a, org.springframework.security.web.context.SecurityContextPersistenceFilter@1491cd6c, org.springframework.security.web.header.HeaderWriterFilter@1600a8a2, org.springframework.security.web.authentication.logout.LogoutFilter@24691c5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@35ac9ebd, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@113dcaf8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@5844a2d1, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@11e17893, org.springframework.security.web.session.SessionManagementFilter@68c34db2, org.springframework.security.web.access.ExceptionTranslationFilter@4bf4680c, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@57c69937]
+2020-12-09 13:06:17.481  INFO 6832 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-09 13:06:17.516  INFO 6832 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-12-09 13:06:18.703  INFO 6832 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-09 13:06:18.820  INFO 6832 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-09 13:06:18.834  INFO 6832 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 13:06:19.239  INFO 6832 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-09 13:06:19.249  INFO 6832 --- [main] c.s.itacademy.service.UserServiceTest    : Started UserServiceTest in 5.342 seconds (JVM running for 6.606)
+2020-12-09 13:06:19.517  INFO 6832 --- [SpringContextShutdownHook] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 13:06:19.519  INFO 6832 --- [SpringContextShutdownHook] o.s.s.concurrent.ThreadPoolTaskExecutor  : Shutting down ExecutorService 'applicationTaskExecutor'
+2020-12-09 13:06:19.520  INFO 6832 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2020-12-09 13:06:19.551  INFO 6832 --- [SpringContextShutdownHook] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
+2020-12-09 13:06:26.811  INFO 30240 --- [main] c.s.itacademy.ToDoListApplication        : Starting ToDoListApplication on LAPTOP-M48TDL80 with PID 30240 (C:\1\spring-security-s18-team-3-1\target\classes started by 38093 in C:\1\spring-security-s18-team-3-1)
+2020-12-09 13:06:26.814  INFO 30240 --- [main] c.s.itacademy.ToDoListApplication        : No active profile set, falling back to default profiles: default
+2020-12-09 13:06:27.467  INFO 30240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-09 13:06:27.565  INFO 30240 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 87ms. Found 5 JPA repository interfaces.
+2020-12-09 13:06:27.802  INFO 30240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@43da41e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:06:27.808  INFO 30240 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:06:28.112  INFO 30240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-12-09 13:06:28.127  INFO 30240 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-09 13:06:28.128  INFO 30240 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-09 13:06:28.273  INFO 30240 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-09 13:06:28.280  INFO 30240 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1430 ms
+2020-12-09 13:06:28.422  INFO 30240 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 13:06:28.473  INFO 30240 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-09 13:06:28.517  INFO 30240 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-12-09 13:06:28.620  WARN 30240 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 13:06:28.645  INFO 30240 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-09 13:06:28.743  INFO 30240 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-09 13:06:28.773  INFO 30240 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54336976, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d0cac30, org.springframework.security.web.header.HeaderWriterFilter@3fc7c734, org.springframework.security.web.authentication.logout.LogoutFilter@4640195a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d611f1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dfe23e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@314a31b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f25f48a, org.springframework.security.web.session.SessionManagementFilter@460b50df, org.springframework.security.web.access.ExceptionTranslationFilter@71370fec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61874b9d]
+2020-12-09 13:06:28.956  INFO 30240 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-09 13:06:28.970  INFO 30240 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-12-09 13:06:29.350  INFO 30240 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-12-09 13:06:29.350  INFO 30240 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-09 13:06:29.794  INFO 30240 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-09 13:06:29.805  INFO 30240 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 13:06:30.032  INFO 30240 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-09 13:06:30.052  INFO 30240 --- [main] c.s.itacademy.ToDoListApplication        : Started ToDoListApplication in 3.563 seconds (JVM running for 4.381)
+2020-12-09 13:07:01.778  INFO 30240 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 13:07:01.778  INFO 30240 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-09 13:07:01.796  INFO 30240 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 18 ms
+2020-12-09 13:07:02.161  WARN 30240 --- [http-nio-9091-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [300] milliseconds.
+2020-12-09 13:07:12.575  INFO 30240 --- [http-nio-9091-exec-8] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:07:33.191  INFO 30240 --- [http-nio-9091-exec-10] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:07:35.815  INFO 30240 --- [http-nio-9091-exec-1] c.s.itacademy.controller.ToDoController  : GET '/todos/create/users/11': create todo of owner[id='11']
+2020-12-09 13:07:55.619  INFO 30240 --- [http-nio-9091-exec-2] c.s.itacademy.controller.ToDoController  : POST '/todos/create/users/11': create todo of owner[id='11']
+2020-12-09 13:07:55.723  INFO 30240 --- [http-nio-9091-exec-3] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:07:59.093  INFO 30240 --- [http-nio-9091-exec-4] c.s.itacademy.controller.ToDoController  : GET '/todos/1/tasks': read todo[id='1']
+2020-12-09 13:08:13.784 ERROR 30240 --- [http-nio-9091-exec-6] c.s.i.exception.GlobalExceptionHandler   : Exception raised = Access is denied :: URL = http://localhost:9091/todos/1/add
+2020-12-09 13:08:17.288  INFO 30240 --- [http-nio-9091-exec-8] c.s.itacademy.controller.ToDoController  : GET '/todos/1/tasks': read todo[id='1']
+2020-12-09 13:08:23.194  INFO 30240 --- [http-nio-9091-exec-9] c.s.itacademy.controller.TaskController  : GET '/tasks/create/todos/1': create task of todo[id='1']
+2020-12-09 13:08:40.147  INFO 30240 --- [http-nio-9091-exec-10] c.s.itacademy.controller.TaskController  : POST '/tasks/create/todos/1': create task of todo[id='1']
+2020-12-09 13:08:40.178  INFO 30240 --- [http-nio-9091-exec-1] c.s.itacademy.controller.ToDoController  : GET '/todos/1/tasks': read todo[id='1']
+2020-12-09 13:09:31.458  INFO 30240 --- [http-nio-9091-exec-3] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:09:43.311  INFO 30240 --- [http-nio-9091-exec-4] c.s.itacademy.controller.ToDoController  : GET '/todos/1/update/users/11': update todo[id='1'] of owner[id='11']
+2020-12-09 13:09:47.091  INFO 30240 --- [http-nio-9091-exec-5] c.s.itacademy.controller.ToDoController  : POST '/todos/1/update/users/11': update todo[id='1'] of owner[id='11']
+2020-12-09 13:09:47.122  INFO 30240 --- [http-nio-9091-exec-6] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:09:52.627  INFO 30240 --- [http-nio-9091-exec-7] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:12:23.238  INFO 30240 --- [http-nio-9091-exec-4] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:12:29.123  INFO 30240 --- [http-nio-9091-exec-5] c.s.itacademy.controller.UserController  : GET '/users/11/update': update user[id='11']
+2020-12-09 13:12:35.779  INFO 30240 --- [http-nio-9091-exec-7] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:12:39.139  INFO 30240 --- [http-nio-9091-exec-8] c.s.itacademy.controller.UserController  : GET '/users/create': create user
+2020-12-09 13:12:48.306  INFO 30240 --- [http-nio-9091-exec-9] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:13:28.189  INFO 30240 --- [http-nio-9091-exec-1] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:13:29.960  INFO 30240 --- [http-nio-9091-exec-2] c.s.itacademy.controller.ToDoController  : GET '/todos/1/tasks': read todo[id='1']
+2020-12-09 13:13:33.628  INFO 30240 --- [http-nio-9091-exec-3] c.s.itacademy.controller.ToDoController  : GET '/todos/1/add': add collaborator, todo[id='1']
+2020-12-09 13:13:33.663  INFO 30240 --- [http-nio-9091-exec-4] c.s.itacademy.controller.ToDoController  : GET '/todos/1/tasks': read todo[id='1']
+2020-12-09 13:13:39.292  INFO 30240 --- [http-nio-9091-exec-5] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:14:03.667  INFO 30240 --- [http-nio-9091-exec-6] c.s.itacademy.controller.ToDoController  : GET '/todos/create/users/11': create todo of owner[id='11']
+2020-12-09 13:14:05.303  INFO 30240 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:14:08.659  INFO 30240 --- [http-nio-9091-exec-8] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:16:45.131  INFO 2368 --- [main] c.s.itacademy.ToDoListApplication        : Starting ToDoListApplication on LAPTOP-M48TDL80 with PID 2368 (C:\1\spring-security-s18-team-3-1\target\classes started by 38093 in C:\1\spring-security-s18-team-3-1)
+2020-12-09 13:16:45.134  INFO 2368 --- [main] c.s.itacademy.ToDoListApplication        : No active profile set, falling back to default profiles: default
+2020-12-09 13:16:45.829  INFO 2368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-09 13:16:45.911  INFO 2368 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 72ms. Found 5 JPA repository interfaces.
+2020-12-09 13:16:46.137  INFO 2368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@43da41e' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:16:46.144  INFO 2368 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:16:46.356  INFO 2368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-12-09 13:16:46.360  INFO 2368 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-09 13:16:46.360  INFO 2368 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-09 13:16:46.492  INFO 2368 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-09 13:16:46.492  INFO 2368 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1317 ms
+2020-12-09 13:16:46.621  INFO 2368 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 13:16:46.671  INFO 2368 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-09 13:16:46.716  INFO 2368 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-12-09 13:16:46.792  WARN 2368 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 13:16:46.813  INFO 2368 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-09 13:16:46.911  INFO 2368 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-09 13:16:46.932  INFO 2368 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54336976, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d0cac30, org.springframework.security.web.header.HeaderWriterFilter@3fc7c734, org.springframework.security.web.authentication.logout.LogoutFilter@4640195a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d611f1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dfe23e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@314a31b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f25f48a, org.springframework.security.web.session.SessionManagementFilter@460b50df, org.springframework.security.web.access.ExceptionTranslationFilter@71370fec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61874b9d]
+2020-12-09 13:16:47.104  INFO 2368 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-09 13:16:47.116  INFO 2368 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-12-09 13:16:47.493  INFO 2368 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-12-09 13:16:47.500  INFO 2368 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-09 13:16:47.997  INFO 2368 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-09 13:16:48.007  INFO 2368 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 13:16:48.280  INFO 2368 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-09 13:16:48.291  INFO 2368 --- [main] c.s.itacademy.ToDoListApplication        : Started ToDoListApplication in 3.478 seconds (JVM running for 4.152)
+2020-12-09 13:16:58.229  INFO 2368 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 13:16:58.230  INFO 2368 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-09 13:16:58.240  INFO 2368 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-12-09 13:16:58.403  WARN 2368 --- [http-nio-9091-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [130] milliseconds.
+2020-12-09 13:17:06.596  INFO 2368 --- [http-nio-9091-exec-6] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:17:18.962  INFO 2368 --- [http-nio-9091-exec-9] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:17:34.412  INFO 2368 --- [http-nio-9091-exec-4] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:20:04.661 ERROR 2368 --- [http-nio-9091-exec-7] c.s.i.exception.GlobalExceptionHandler   : Exception raised = Access is denied :: URL = http://localhost:9091/todos/all/users/5
+2020-12-09 13:20:07.029  INFO 2368 --- [http-nio-9091-exec-10] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:20:08.773  INFO 2368 --- [http-nio-9091-exec-9] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:20:14.552 ERROR 2368 --- [http-nio-9091-exec-1] c.s.i.exception.GlobalExceptionHandler   : Exception raised = Access is denied :: URL = http://localhost:9091/todos/all/users/20
+2020-12-09 13:20:27.209  INFO 2368 --- [http-nio-9091-exec-6] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:20:32.269  INFO 2368 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/5': get all todos of user[id='5']
+2020-12-09 13:20:39.606  INFO 2368 --- [http-nio-9091-exec-8] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/100': get all todos of user[id='100']
+2020-12-09 13:20:39.612 ERROR 2368 --- [http-nio-9091-exec-8] c.s.i.exception.GlobalExceptionHandler   : Exception raised = User with id 100 not found :: URL = http://localhost:9091/todos/all/users/100
+2020-12-09 13:20:45.493  INFO 2368 --- [http-nio-9091-exec-10] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/5': get all todos of user[id='5']
+2020-12-09 13:27:30.473  INFO 24152 --- [main] c.s.itacademy.ToDoListApplication        : Starting ToDoListApplication on LAPTOP-M48TDL80 with PID 24152 (C:\1\spring-security-s18-team-3-1\target\classes started by 38093 in C:\1\spring-security-s18-team-3-1)
+2020-12-09 13:27:30.478  INFO 24152 --- [main] c.s.itacademy.ToDoListApplication        : No active profile set, falling back to default profiles: default
+2020-12-09 13:27:31.300  INFO 24152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-09 13:27:31.419  INFO 24152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 99ms. Found 5 JPA repository interfaces.
+2020-12-09 13:27:31.755  INFO 24152 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@3fc05ea2' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:27:31.767  INFO 24152 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:27:32.028  INFO 24152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-12-09 13:27:32.036  INFO 24152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-09 13:27:32.036  INFO 24152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-09 13:27:32.171  INFO 24152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-09 13:27:32.171  INFO 24152 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1638 ms
+2020-12-09 13:27:32.326  INFO 24152 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 13:27:32.381  INFO 24152 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-09 13:27:32.426  INFO 24152 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-12-09 13:27:32.516  WARN 24152 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 13:27:32.533  INFO 24152 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-09 13:27:32.632  INFO 24152 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-09 13:27:32.674  INFO 24152 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@61874b9d, org.springframework.security.web.context.SecurityContextPersistenceFilter@53d2d002, org.springframework.security.web.header.HeaderWriterFilter@557b6a37, org.springframework.security.web.authentication.logout.LogoutFilter@75cf0de5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@56846330, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5820070c, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@1cf336fd, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@d611f1c, org.springframework.security.web.session.SessionManagementFilter@1c33e528, org.springframework.security.web.access.ExceptionTranslationFilter@718f805a, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@49e2b3c5]
+2020-12-09 13:27:32.834  INFO 24152 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-09 13:27:32.851  INFO 24152 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-12-09 13:27:33.384  INFO 24152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-12-09 13:27:33.386  INFO 24152 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-09 13:27:33.829  INFO 24152 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-09 13:27:33.835  INFO 24152 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 13:27:34.127  INFO 24152 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-09 13:27:34.137  INFO 24152 --- [main] c.s.itacademy.ToDoListApplication        : Started ToDoListApplication in 4.083 seconds (JVM running for 4.917)
+2020-12-09 13:27:40.450  INFO 24152 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 13:27:40.451  INFO 24152 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-09 13:27:40.461  INFO 24152 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-12-09 13:27:40.642  WARN 24152 --- [http-nio-9091-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [146] milliseconds.
+2020-12-09 13:27:49.632  INFO 24152 --- [http-nio-9091-exec-6] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:27:55.151  INFO 24152 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:27:57.923  INFO 24152 --- [http-nio-9091-exec-8] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:28:01.585  INFO 24152 --- [http-nio-9091-exec-9] c.s.itacademy.controller.UserController  : GET '/users/11/update': update user[id='11']
+2020-12-09 13:28:06.554  INFO 24152 --- [http-nio-9091-exec-1] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:28:09.602  INFO 24152 --- [http-nio-9091-exec-4] c.s.itacademy.controller.UserController  : GET '/users/create': create user
+2020-12-09 13:28:32.029  INFO 24152 --- [http-nio-9091-exec-2] c.s.itacademy.controller.UserController  : POST '/users/create': create user
+2020-12-09 13:28:32.203  INFO 24152 --- [http-nio-9091-exec-3] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/1': get all todos of user[id='1']
+2020-12-09 13:28:34.098  INFO 24152 --- [http-nio-9091-exec-5] c.s.itacademy.controller.ToDoController  : GET '/todos/create/users/1': create todo of owner[id='1']
+2020-12-09 13:28:48.471  INFO 24152 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : POST '/todos/create/users/1': create todo of owner[id='1']
+2020-12-09 13:28:48.493  INFO 24152 --- [http-nio-9091-exec-8] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/1': get all todos of user[id='1']
+2020-12-09 13:28:50.522  INFO 24152 --- [http-nio-9091-exec-9] c.s.itacademy.controller.ToDoController  : GET '/todos/1/tasks': read todo[id='1']
+2020-12-09 13:29:02.603  INFO 24152 --- [http-nio-9091-exec-10] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/1': get all todos of user[id='1']
+2020-12-09 13:29:07.746  INFO 24152 --- [http-nio-9091-exec-1] c.s.itacademy.controller.ToDoController  : GET '/todos/1/tasks': read todo[id='1']
+2020-12-09 13:29:12.058  INFO 24152 --- [http-nio-9091-exec-4] c.s.itacademy.controller.ToDoController  : GET '/todos/1/add': add collaborator, todo[id='1']
+2020-12-09 13:29:12.103  INFO 24152 --- [http-nio-9091-exec-2] c.s.itacademy.controller.ToDoController  : GET '/todos/1/tasks': read todo[id='1']
+2020-12-09 13:29:25.243  INFO 24152 --- [http-nio-9091-exec-3] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/1': get all todos of user[id='1']
+2020-12-09 13:29:27.863  INFO 24152 --- [http-nio-9091-exec-5] c.s.itacademy.controller.ToDoController  : GET '/todos/1/update/users/1': update todo[id='1'] of owner[id='1']
+2020-12-09 13:29:36.011  INFO 24152 --- [http-nio-9091-exec-6] c.s.itacademy.controller.ToDoController  : POST '/todos/1/update/users/1': update todo[id='1'] of owner[id='1']
+2020-12-09 13:29:36.029  INFO 24152 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/1': get all todos of user[id='1']
+2020-12-09 13:29:39.742  INFO 24152 --- [http-nio-9091-exec-8] c.s.itacademy.controller.ToDoController  : GET '/todos/1/delete/users/1': delete todo[id='1'] of owner[id='1']
+2020-12-09 13:29:39.771  INFO 24152 --- [http-nio-9091-exec-9] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/1': get all todos of user[id='1']
+2020-12-09 13:29:46.972  INFO 24152 --- [http-nio-9091-exec-10] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:29:51.628  INFO 24152 --- [http-nio-9091-exec-4] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/5': get all todos of user[id='5']
+2020-12-09 13:29:58.553  INFO 24152 --- [http-nio-9091-exec-2] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/100': get all todos of user[id='100']
+2020-12-09 13:29:58.559 ERROR 24152 --- [http-nio-9091-exec-2] c.s.i.exception.GlobalExceptionHandler   : Exception raised = User with id 100 not found :: URL = http://localhost:9091/todos/all/users/100
+2020-12-09 13:30:02.419  INFO 24152 --- [http-nio-9091-exec-3] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:30:08.516  INFO 24152 --- [http-nio-9091-exec-5] c.s.itacademy.controller.UserController  : GET '/users/1/delete': delete user[id='1']
+2020-12-09 13:30:08.536  INFO 24152 --- [http-nio-9091-exec-6] c.s.itacademy.controller.UserController  : GET '/users/all': all users
+2020-12-09 13:30:10.561  INFO 24152 --- [http-nio-9091-exec-7] c.s.itacademy.controller.UserController  : GET '/users/all': all users
+2020-12-09 13:30:24.429  INFO 24152 --- [http-nio-9091-exec-1] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:30:26.170 ERROR 24152 --- [http-nio-9091-exec-4] c.s.i.exception.GlobalExceptionHandler   : Exception raised = Access is denied :: URL = http://localhost:9091/todos/all/users/5
+2020-12-09 13:30:31.729  INFO 24152 --- [http-nio-9091-exec-3] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:30:38.680  INFO 24152 --- [http-nio-9091-exec-5] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:30:40.465  INFO 24152 --- [http-nio-9091-exec-6] c.s.itacademy.controller.ToDoController  : GET '/todos/create/users/11': create todo of owner[id='11']
+2020-12-09 13:30:49.630  INFO 24152 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : POST '/todos/create/users/11': create todo of owner[id='11']
+2020-12-09 13:30:49.644  INFO 24152 --- [http-nio-9091-exec-8] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:31:00.145  INFO 24152 --- [http-nio-9091-exec-10] c.s.itacademy.controller.ToDoController  : GET '/todos/2/tasks': read todo[id='2']
+2020-12-09 13:31:02.128  INFO 24152 --- [http-nio-9091-exec-1] c.s.itacademy.controller.TaskController  : GET '/tasks/create/todos/2': create task of todo[id='2']
+2020-12-09 13:31:11.499  INFO 24152 --- [http-nio-9091-exec-4] c.s.itacademy.controller.TaskController  : POST '/tasks/create/todos/2': create task of todo[id='2']
+2020-12-09 13:31:11.527  INFO 24152 --- [http-nio-9091-exec-2] c.s.itacademy.controller.ToDoController  : GET '/todos/2/tasks': read todo[id='2']
+2020-12-09 13:32:06.501  INFO 11884 --- [main] c.s.itacademy.ToDoListApplication        : Starting ToDoListApplication on LAPTOP-M48TDL80 with PID 11884 (C:\1\spring-security-s18-team-3-1\target\classes started by 38093 in C:\1\spring-security-s18-team-3-1)
+2020-12-09 13:32:06.504  INFO 11884 --- [main] c.s.itacademy.ToDoListApplication        : No active profile set, falling back to default profiles: default
+2020-12-09 13:32:07.415  INFO 11884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-09 13:32:07.518  INFO 11884 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 94ms. Found 5 JPA repository interfaces.
+2020-12-09 13:32:07.832  INFO 11884 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@736309a9' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:32:07.841  INFO 11884 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:32:08.127  INFO 11884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-12-09 13:32:08.135  INFO 11884 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-09 13:32:08.136  INFO 11884 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-09 13:32:08.282  INFO 11884 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-09 13:32:08.282  INFO 11884 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1726 ms
+2020-12-09 13:32:08.443  INFO 11884 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 13:32:08.496  INFO 11884 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-09 13:32:08.541  INFO 11884 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-12-09 13:32:08.640  WARN 11884 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 13:32:08.666  INFO 11884 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-09 13:32:08.764  INFO 11884 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-09 13:32:08.803  INFO 11884 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@45b32dfe, org.springframework.security.web.context.SecurityContextPersistenceFilter@e09f1b6, org.springframework.security.web.header.HeaderWriterFilter@250b5e5b, org.springframework.security.web.authentication.logout.LogoutFilter@4735d6e5, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@66fb45e5, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@11b32a14, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@71370fec, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@136ccbfe, org.springframework.security.web.session.SessionManagementFilter@34be065a, org.springframework.security.web.access.ExceptionTranslationFilter@73613ae5, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@e829999]
+2020-12-09 13:32:08.987  INFO 11884 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-09 13:32:09.002  INFO 11884 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-12-09 13:32:09.618  INFO 11884 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-12-09 13:32:09.620  INFO 11884 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-09 13:32:10.014  INFO 11884 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-09 13:32:10.022  INFO 11884 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 13:32:10.320  INFO 11884 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-09 13:32:10.328  INFO 11884 --- [main] c.s.itacademy.ToDoListApplication        : Started ToDoListApplication in 4.353 seconds (JVM running for 5.218)
+2020-12-09 13:32:18.681  INFO 11884 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 13:32:18.682  INFO 11884 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-09 13:32:18.690  INFO 11884 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 8 ms
+2020-12-09 13:32:19.034  WARN 11884 --- [http-nio-9091-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [302] milliseconds.
+2020-12-09 13:32:25.704  INFO 11884 --- [http-nio-9091-exec-4] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:32:30.190  INFO 11884 --- [http-nio-9091-exec-5] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/5': get all todos of user[id='5']
+2020-12-09 13:32:31.733  INFO 11884 --- [http-nio-9091-exec-6] c.s.itacademy.controller.ToDoController  : GET '/todos/10/tasks': read todo[id='10']
+2020-12-09 13:32:36.655  INFO 11884 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/5': get all todos of user[id='5']
+2020-12-09 13:32:38.473  INFO 11884 --- [http-nio-9091-exec-8] c.s.itacademy.controller.ToDoController  : GET '/todos/create/users/5': create todo of owner[id='5']
+2020-12-09 13:32:41.742  INFO 11884 --- [http-nio-9091-exec-9] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:32:43.175  INFO 11884 --- [http-nio-9091-exec-10] c.s.itacademy.controller.UserController  : GET '/users/create': create user
+2020-12-09 13:33:07.202  INFO 11884 --- [http-nio-9091-exec-1] c.s.itacademy.controller.UserController  : POST '/users/create': create user
+2020-12-09 13:33:07.406  INFO 11884 --- [http-nio-9091-exec-2] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/1': get all todos of user[id='1']
+2020-12-09 13:33:09.104  INFO 11884 --- [http-nio-9091-exec-3] c.s.itacademy.controller.ToDoController  : GET '/todos/create/users/1': create todo of owner[id='1']
+2020-12-09 13:33:23.839  INFO 11884 --- [http-nio-9091-exec-5] c.s.itacademy.controller.ToDoController  : POST '/todos/create/users/1': create todo of owner[id='1']
+2020-12-09 13:33:23.853  INFO 11884 --- [http-nio-9091-exec-6] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/1': get all todos of user[id='1']
+2020-12-09 13:33:26.842  INFO 11884 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : GET '/todos/1/tasks': read todo[id='1']
+2020-12-09 13:33:34.367  INFO 11884 --- [http-nio-9091-exec-8] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:33:40.565  INFO 11884 --- [http-nio-9091-exec-9] c.s.itacademy.controller.UserController  : GET '/users/1/update': update user[id='1']
+2020-12-09 13:33:58.768  INFO 11884 --- [http-nio-9091-exec-1] c.s.itacademy.controller.UserController  : POST '/users/create': create user
+2020-12-09 13:33:58.895  INFO 11884 --- [http-nio-9091-exec-2] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/1': get all todos of user[id='1']
+2020-12-09 13:34:02.806  INFO 11884 --- [http-nio-9091-exec-3] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:34:07.577  INFO 11884 --- [http-nio-9091-exec-4] c.s.itacademy.controller.UserController  : GET '/users/1/delete': delete user[id='1']
+2020-12-09 13:34:07.608  INFO 11884 --- [http-nio-9091-exec-5] c.s.itacademy.controller.UserController  : GET '/users/all': all users
+2020-12-09 13:34:09.271  INFO 11884 --- [http-nio-9091-exec-6] c.s.itacademy.controller.UserController  : GET '/users/all': all users
+2020-12-09 13:34:19.673  INFO 11884 --- [http-nio-9091-exec-10] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:34:24.931 ERROR 11884 --- [http-nio-9091-exec-2] c.s.i.exception.GlobalExceptionHandler   : Exception raised = Access is denied :: URL = http://localhost:9091/todos/all/users/4
+2020-12-09 13:34:28.396  INFO 11884 --- [http-nio-9091-exec-4] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:34:31.669  INFO 11884 --- [http-nio-9091-exec-5] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:34:33.153  INFO 11884 --- [http-nio-9091-exec-6] c.s.itacademy.controller.ToDoController  : GET '/todos/create/users/11': create todo of owner[id='11']
+2020-12-09 13:34:48.405  INFO 11884 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : POST '/todos/create/users/11': create todo of owner[id='11']
+2020-12-09 13:34:48.417  INFO 11884 --- [http-nio-9091-exec-8] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:34:52.845  INFO 11884 --- [http-nio-9091-exec-9] c.s.itacademy.controller.ToDoController  : GET '/todos/2/update/users/11': update todo[id='2'] of owner[id='11']
+2020-12-09 13:34:58.148  INFO 11884 --- [http-nio-9091-exec-10] c.s.itacademy.controller.ToDoController  : POST '/todos/2/update/users/11': update todo[id='2'] of owner[id='11']
+2020-12-09 13:34:58.161  INFO 11884 --- [http-nio-9091-exec-1] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:34:59.911  INFO 11884 --- [http-nio-9091-exec-2] c.s.itacademy.controller.ToDoController  : GET '/todos/2/tasks': read todo[id='2']
+2020-12-09 13:35:02.062  INFO 11884 --- [http-nio-9091-exec-3] c.s.itacademy.controller.TaskController  : GET '/tasks/create/todos/2': create task of todo[id='2']
+2020-12-09 13:35:08.050  INFO 11884 --- [http-nio-9091-exec-4] c.s.itacademy.controller.TaskController  : POST '/tasks/create/todos/2': create task of todo[id='2']
+2020-12-09 13:35:08.074  INFO 11884 --- [http-nio-9091-exec-5] c.s.itacademy.controller.ToDoController  : GET '/todos/2/tasks': read todo[id='2']
+2020-12-09 13:35:14.818  INFO 11884 --- [http-nio-9091-exec-6] c.s.itacademy.controller.TaskController  : GET '/tasks/1/update/todos/2': update task[id='1'] of todo[id='2']
+2020-12-09 13:35:20.943  INFO 11884 --- [http-nio-9091-exec-7] c.s.itacademy.controller.TaskController  : POST '/tasks/1/update/todos/2': update task[id='1'] of todo[id='2']
+2020-12-09 13:35:20.961  INFO 11884 --- [http-nio-9091-exec-8] c.s.itacademy.controller.ToDoController  : GET '/todos/2/tasks': read todo[id='2']
+2020-12-09 13:35:25.527 ERROR 11884 --- [http-nio-9091-exec-10] c.s.i.exception.GlobalExceptionHandler   : Exception raised = Access is denied :: URL = http://localhost:9091/todos/2/add
+2020-12-09 13:35:30.048  INFO 11884 --- [http-nio-9091-exec-2] c.s.itacademy.controller.ToDoController  : GET '/todos/2/tasks': read todo[id='2']
+2020-12-09 13:35:36.840  INFO 11884 --- [http-nio-9091-exec-5] c.s.itacademy.controller.UserController  : GET '/users/create': create user
+2020-12-09 13:35:56.990  INFO 11884 --- [http-nio-9091-exec-6] c.s.itacademy.controller.UserController  : POST '/users/create': create user
+2020-12-09 13:36:10.654  INFO 11884 --- [http-nio-9091-exec-7] c.s.itacademy.controller.UserController  : POST '/users/create': create user
+2020-12-09 13:37:10.128  INFO 12172 --- [main] c.s.itacademy.ToDoListApplication        : Starting ToDoListApplication on LAPTOP-M48TDL80 with PID 12172 (C:\1\spring-security-s18-team-3-1\target\classes started by 38093 in C:\1\spring-security-s18-team-3-1)
+2020-12-09 13:37:10.131  INFO 12172 --- [main] c.s.itacademy.ToDoListApplication        : No active profile set, falling back to default profiles: default
+2020-12-09 13:37:11.147  INFO 12172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-09 13:37:11.248  INFO 12172 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 92ms. Found 5 JPA repository interfaces.
+2020-12-09 13:37:11.560  INFO 12172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@747d1932' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:37:11.568  INFO 12172 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 13:37:11.839  INFO 12172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-12-09 13:37:11.848  INFO 12172 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-09 13:37:11.849  INFO 12172 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-09 13:37:11.994  INFO 12172 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-09 13:37:11.994  INFO 12172 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1816 ms
+2020-12-09 13:37:12.148  INFO 12172 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 13:37:12.205  INFO 12172 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-09 13:37:12.254  INFO 12172 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-12-09 13:37:12.350  WARN 12172 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 13:37:12.375  INFO 12172 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-09 13:37:12.481  INFO 12172 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-09 13:37:12.516  INFO 12172 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@30db5536, org.springframework.security.web.context.SecurityContextPersistenceFilter@718f805a, org.springframework.security.web.header.HeaderWriterFilter@5a13fcf3, org.springframework.security.web.authentication.logout.LogoutFilter@2792b416, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@e829999, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@557b6a37, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@34208baa, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@45b32dfe, org.springframework.security.web.session.SessionManagementFilter@4ef2ab73, org.springframework.security.web.access.ExceptionTranslationFilter@20d33ea, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@17229821]
+2020-12-09 13:37:12.721  INFO 12172 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-09 13:37:12.739  INFO 12172 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-12-09 13:37:13.328  INFO 12172 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-12-09 13:37:13.329  INFO 12172 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-09 13:37:13.767  INFO 12172 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-09 13:37:13.775  INFO 12172 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 13:37:14.120  INFO 12172 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-09 13:37:14.131  INFO 12172 --- [main] c.s.itacademy.ToDoListApplication        : Started ToDoListApplication in 4.462 seconds (JVM running for 5.384)
+2020-12-09 13:37:21.577  INFO 12172 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 13:37:21.577  INFO 12172 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-09 13:37:21.588  INFO 12172 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 10 ms
+2020-12-09 13:37:21.853  WARN 12172 --- [http-nio-9091-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [214] milliseconds.
+2020-12-09 13:37:29.151  INFO 12172 --- [http-nio-9091-exec-6] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:37:34.116  INFO 12172 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:37:36.250  INFO 12172 --- [http-nio-9091-exec-8] c.s.itacademy.controller.ToDoController  : GET '/todos/create/users/11': create todo of owner[id='11']
+2020-12-09 13:37:42.304  INFO 12172 --- [http-nio-9091-exec-9] c.s.itacademy.controller.ToDoController  : POST '/todos/create/users/11': create todo of owner[id='11']
+2020-12-09 13:37:42.364  INFO 12172 --- [http-nio-9091-exec-10] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:37:45.050  INFO 12172 --- [http-nio-9091-exec-1] c.s.itacademy.controller.ToDoController  : GET '/todos/1/tasks': read todo[id='1']
+2020-12-09 13:37:50.461  INFO 12172 --- [http-nio-9091-exec-4] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:37:52.766  INFO 12172 --- [http-nio-9091-exec-3] c.s.itacademy.controller.ToDoController  : GET '/todos/1/update/users/11': update todo[id='1'] of owner[id='11']
+2020-12-09 13:37:59.356  INFO 12172 --- [http-nio-9091-exec-2] c.s.itacademy.controller.ToDoController  : POST '/todos/1/update/users/11': update todo[id='1'] of owner[id='11']
+2020-12-09 13:37:59.379  INFO 12172 --- [http-nio-9091-exec-5] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:38:03.648  INFO 12172 --- [http-nio-9091-exec-6] c.s.itacademy.controller.ToDoController  : GET '/todos/1/delete/users/11': delete todo[id='1'] of owner[id='11']
+2020-12-09 13:38:03.692  INFO 12172 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/11': get all todos of user[id='11']
+2020-12-09 13:38:06.711  INFO 12172 --- [http-nio-9091-exec-8] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:38:08.181  INFO 12172 --- [http-nio-9091-exec-9] c.s.itacademy.controller.UserController  : GET '/users/create': create user
+2020-12-09 13:38:25.572  INFO 12172 --- [http-nio-9091-exec-1] c.s.itacademy.controller.UserController  : POST '/users/create': create user
+2020-12-09 13:38:25.712  INFO 12172 --- [http-nio-9091-exec-4] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/1': get all todos of user[id='1']
+2020-12-09 13:38:29.056  INFO 12172 --- [http-nio-9091-exec-3] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:38:31.665  INFO 12172 --- [http-nio-9091-exec-2] c.s.itacademy.controller.UserController  : GET '/users/1/update': update user[id='1']
+2020-12-09 13:38:43.590  INFO 12172 --- [http-nio-9091-exec-6] c.s.itacademy.controller.UserController  : POST '/users/create': create user
+2020-12-09 13:38:43.727  INFO 12172 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/1': get all todos of user[id='1']
+2020-12-09 13:38:45.437  INFO 12172 --- [http-nio-9091-exec-8] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:38:47.949  INFO 12172 --- [http-nio-9091-exec-9] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/5': get all todos of user[id='5']
+2020-12-09 13:38:54.800  INFO 12172 --- [http-nio-9091-exec-10] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/100': get all todos of user[id='100']
+2020-12-09 13:38:54.806 ERROR 12172 --- [http-nio-9091-exec-10] c.s.i.exception.GlobalExceptionHandler   : Exception raised = User with id 100 not found :: URL = http://localhost:9091/todos/all/users/100
+2020-12-09 13:38:58.218  INFO 12172 --- [http-nio-9091-exec-1] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:39:07.896  INFO 12172 --- [http-nio-9091-exec-2] c.s.itacademy.controller.UserController  : GET '/users/create': create user
+2020-12-09 13:39:35.667  INFO 12172 --- [http-nio-9091-exec-6] c.s.itacademy.controller.UserController  : POST '/users/create': create user
+2020-12-09 13:39:54.850  INFO 12172 --- [http-nio-9091-exec-10] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/2': get all todos of user[id='2']
+2020-12-09 13:39:58.119  INFO 12172 --- [http-nio-9091-exec-1] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:40:09.175  INFO 12172 --- [http-nio-9091-exec-4] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/2': get all todos of user[id='2']
+2020-12-09 13:40:10.615  INFO 12172 --- [http-nio-9091-exec-3] c.s.itacademy.controller.ToDoController  : GET '/todos/create/users/2': create todo of owner[id='2']
+2020-12-09 13:40:18.248  INFO 12172 --- [http-nio-9091-exec-2] c.s.itacademy.controller.ToDoController  : POST '/todos/create/users/2': create todo of owner[id='2']
+2020-12-09 13:40:18.261  INFO 12172 --- [http-nio-9091-exec-5] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/2': get all todos of user[id='2']
+2020-12-09 13:40:21.469  INFO 12172 --- [http-nio-9091-exec-6] c.s.itacademy.controller.ToDoController  : GET '/todos/2/update/users/2': update todo[id='2'] of owner[id='2']
+2020-12-09 13:40:27.342  INFO 12172 --- [http-nio-9091-exec-7] c.s.itacademy.controller.ToDoController  : POST '/todos/2/update/users/2': update todo[id='2'] of owner[id='2']
+2020-12-09 13:40:27.355  INFO 12172 --- [http-nio-9091-exec-8] c.s.itacademy.controller.ToDoController  : GET '/todos/all/users/2': get all todos of user[id='2']
+2020-12-09 13:40:31.227  INFO 12172 --- [http-nio-9091-exec-9] c.s.itacademy.controller.ToDoController  : GET '/todos/2/tasks': read todo[id='2']
+2020-12-09 13:40:32.871  INFO 12172 --- [http-nio-9091-exec-10] c.s.itacademy.controller.TaskController  : GET '/tasks/create/todos/2': create task of todo[id='2']
+2020-12-09 13:40:43.189  INFO 12172 --- [http-nio-9091-exec-4] c.s.itacademy.controller.TaskController  : POST '/tasks/create/todos/2': create task of todo[id='2']
+2020-12-09 13:40:43.210  INFO 12172 --- [http-nio-9091-exec-3] c.s.itacademy.controller.ToDoController  : GET '/todos/2/tasks': read todo[id='2']
+2020-12-09 13:40:45.485  INFO 12172 --- [http-nio-9091-exec-2] c.s.itacademy.controller.TaskController  : GET '/tasks/1/update/todos/2': update task[id='1'] of todo[id='2']
+2020-12-09 13:40:51.748  INFO 12172 --- [http-nio-9091-exec-5] c.s.itacademy.controller.TaskController  : POST '/tasks/1/update/todos/2': update task[id='1'] of todo[id='2']
+2020-12-09 13:40:51.765  INFO 12172 --- [http-nio-9091-exec-6] c.s.itacademy.controller.ToDoController  : GET '/todos/2/tasks': read todo[id='2']
+2020-12-09 13:40:54.666  INFO 12172 --- [http-nio-9091-exec-7] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:40:58.751 ERROR 12172 --- [http-nio-9091-exec-8] c.s.i.exception.GlobalExceptionHandler   : Exception raised = Access is denied :: URL = http://localhost:9091/users/2/delete
+2020-12-09 13:41:03.227  INFO 12172 --- [http-nio-9091-exec-10] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
+2020-12-09 13:41:12.881  INFO 12172 --- [http-nio-9091-exec-3] c.s.itacademy.controller.UserController  : GET '/users/create': create user
+2020-12-09 13:41:27.874  INFO 12172 --- [http-nio-9091-exec-2] c.s.itacademy.controller.UserController  : POST '/users/create': create user
+2020-12-09 14:14:47.355  INFO 17152 --- [main] c.s.itacademy.ToDoListApplication        : Starting ToDoListApplication on LAPTOP-M48TDL80 with PID 17152 (D:\Repository\To-Do-List\target\classes started by 38093 in D:\Repository\To-Do-List)
+2020-12-09 14:14:47.358  INFO 17152 --- [main] c.s.itacademy.ToDoListApplication        : No active profile set, falling back to default profiles: default
+2020-12-09 14:14:47.996  INFO 17152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFERRED mode.
+2020-12-09 14:14:48.051  INFO 17152 --- [main] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 49ms. Found 5 JPA repository interfaces.
+2020-12-09 14:14:48.235  INFO 17152 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler@148c7c4b' of type [org.springframework.security.access.expression.method.DefaultMethodSecurityExpressionHandler] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 14:14:48.239  INFO 17152 --- [main] trationDelegate$BeanPostProcessorChecker : Bean 'methodSecurityMetadataSource' of type [org.springframework.security.access.method.DelegatingMethodSecurityMetadataSource] is not eligible for getting processed by all BeanPostProcessors (for example: not eligible for auto-proxying)
+2020-12-09 14:14:48.408  INFO 17152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 9091 (http)
+2020-12-09 14:14:48.414  INFO 17152 --- [main] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2020-12-09 14:14:48.414  INFO 17152 --- [main] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.37]
+2020-12-09 14:14:48.525  INFO 17152 --- [main] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2020-12-09 14:14:48.525  INFO 17152 --- [main] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1122 ms
+2020-12-09 14:14:48.624  INFO 17152 --- [main] o.s.s.concurrent.ThreadPoolTaskExecutor  : Initializing ExecutorService 'applicationTaskExecutor'
+2020-12-09 14:14:48.653  INFO 17152 --- [task-1] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2020-12-09 14:14:48.682  INFO 17152 --- [task-1] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.4.20.Final
+2020-12-09 14:14:48.752  WARN 17152 --- [main] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2020-12-09 14:14:48.755  INFO 17152 --- [task-1] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.0.Final}
+2020-12-09 14:14:48.819  INFO 17152 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2020-12-09 14:14:48.860  INFO 17152 --- [main] o.s.s.web.DefaultSecurityFilterChain     : Creating filter chain: any request, [org.springframework.security.web.context.request.async.WebAsyncManagerIntegrationFilter@54336976, org.springframework.security.web.context.SecurityContextPersistenceFilter@1d0cac30, org.springframework.security.web.header.HeaderWriterFilter@3fc7c734, org.springframework.security.web.authentication.logout.LogoutFilter@4640195a, org.springframework.security.web.authentication.UsernamePasswordAuthenticationFilter@d611f1c, org.springframework.security.web.savedrequest.RequestCacheAwareFilter@5dfe23e8, org.springframework.security.web.servletapi.SecurityContextHolderAwareRequestFilter@314a31b0, org.springframework.security.web.authentication.AnonymousAuthenticationFilter@f25f48a, org.springframework.security.web.session.SessionManagementFilter@460b50df, org.springframework.security.web.access.ExceptionTranslationFilter@71370fec, org.springframework.security.web.access.intercept.FilterSecurityInterceptor@61874b9d]
+2020-12-09 14:14:48.981  INFO 17152 --- [task-1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2020-12-09 14:14:48.991  INFO 17152 --- [task-1] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.PostgreSQL95Dialect
+2020-12-09 14:14:49.377  INFO 17152 --- [main] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 9091 (http) with context path ''
+2020-12-09 14:14:49.378  INFO 17152 --- [main] DeferredRepositoryInitializationListener : Triggering deferred initialization of Spring Data repositories…
+2020-12-09 14:14:49.667  INFO 17152 --- [task-1] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2020-12-09 14:14:49.672  INFO 17152 --- [task-1] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2020-12-09 14:14:49.878  INFO 17152 --- [main] DeferredRepositoryInitializationListener : Spring Data repositories initialized!
+2020-12-09 14:14:49.885  INFO 17152 --- [main] c.s.itacademy.ToDoListApplication        : Started ToDoListApplication in 2.782 seconds (JVM running for 3.462)
+2020-12-09 14:15:26.339  INFO 17152 --- [http-nio-9091-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2020-12-09 14:15:26.340  INFO 17152 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2020-12-09 14:15:26.351  INFO 17152 --- [http-nio-9091-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 11 ms
+2020-12-09 14:15:26.501  WARN 17152 --- [http-nio-9091-exec-1] o.a.c.util.SessionIdGeneratorBase        : Creation of SecureRandom instance for session ID generation using [SHA1PRNG] took [119] milliseconds.
+2020-12-09 14:15:32.729  INFO 17152 --- [http-nio-9091-exec-5] c.s.itacademy.controller.HomeController  : GET 'home', '/': open home
