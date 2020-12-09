@@ -107,6 +107,7 @@ hs_err_pid*
 *.docx
 *.pdf
 
+
 # bower
 /bower_components/
 /**/bower_components/
